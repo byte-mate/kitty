@@ -1,0 +1,21 @@
+cargo-features = ["edition2024"]
+[package]
+name = "kitty"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.21.2", features = ["full"] }
+poise = { git = "https://github.com/serenity-rs/poise", branch = "serenity-next" }
+chrono = "0.4.35"
+serde_yaml = "0.9.33"
+memory-stats = "1.1.0"
+tokio-tungstenite = "0.21.0"
+axum = { version = "0.7.5" }
+log = "0.4.21"
+serde_json = "1.0.114"
+reqwest = { version = "0.12.2", features = ["json"] }
+serde = { version = "1.0.197", features = ["derive"] }
+sqlx = { version = "0.7.4", features = ["runtime-tokio-native-tls", "postgres", "chrono"]}

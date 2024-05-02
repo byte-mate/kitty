@@ -12,3 +12,9 @@ Cargo.lock
 
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
+
+# Private IDEA settings
+.idea/
+
+# Here we store token for the bot
+Config.yaml
